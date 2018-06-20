@@ -92,7 +92,7 @@ class ViewController: UIViewController {
         let attributes: [NSAttributedString.Key: Any] = [.strokeWidth: 5.0,
                                                          .strokeColor: UIColor.red]
         let attributedString = NSAttributedString(string: "🏆", attributes: attributes)
-        cardButtons.indices.forEach() { button in
+        cardButtons.forEach() { button in
             button.isHidden = false
             button.isEnabled = false
             button.setAttributedTitle(attributedString, for: .normal)
